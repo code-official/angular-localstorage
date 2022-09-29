@@ -1,0 +1,20 @@
+<p>login works!</p>
+
+<h1>THIS IS THE LOGIN COMPONENT</h1>
+
+<div class="container">
+    <form [formGroup]="loginForm" (submit)="login()">
+        <div class="form-group">
+            <label for="email1">Email address:</label>
+            <input type="email" class="form-control" id="email1" formControlName="email1">
+            
+        </div>
+        <div class="form-group">
+            <label for="pwd1">Password:</label>
+            <input type="password" class="form-control" id="pwd1" formControlName="pwd1">
+        </div>
+        <button type="submit" class="bg-primary">Submit</button>
+    </form>
+</div>
+
+

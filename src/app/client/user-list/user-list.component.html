@@ -1,0 +1,38 @@
+<p>user-list works!</p>
+
+<div class="card">
+  <div class="card-header">User List</div>
+  <div class="card-body">
+    <table class="table table-bordered table-sm">
+      <thead>
+        <tr>
+          <th>Sr no</th>
+          <th>Name</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Mobile</th>
+          <th>Salary</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of userList; let i=index">
+          <td>{{i+1}}</td>
+          <td>{{user.userName}}</td>
+          <td>{{user.userCity}}</td>
+          <td>{{user.userState}}</td>
+          <td>{{user.userMobile}}</td>
+          <td>{{user.userSalary}}</td>
+          <td>
+            <button class="btn btn-sm btn-success" [routerLink]="['/user-update',user.userId]">Edit</button>
+            <!-- <button class="btn btn-sm btn-success"><a routerLink="user-update"> edit</a></button> -->
+            <button class="btn btn-sm btn-secondary" (click)="delete(user.userId)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table> 
+  </div>
+
+</div>
+
+<a class="nav-link active" routerLink="user-update"  href="#">UseUpdate</a>

@@ -1,0 +1,47 @@
+<p>user-add works!</p>
+<p>User Registration form </p>
+
+<div class="card">
+    <div class="card-header bg-success">User Add or Registration</div>
+    <div class="card-body">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="inputEmail4">Name</label>
+                    <input type="text" class="form-control" [(ngModel)]="userObj.userName" name="userName"
+                        placeholder="Enter Name">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="inputEmail4">City</label>
+                    <input type="text" class="form-control" [(ngModel)]="userObj.userCity" name="userCity"
+                        placeholder="Enter City">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputEmail4"> Select State</label>
+                    <select class="form-control" [(ngModel)]="userObj.userState" name="userState">
+                        <select>Select Stat</select>
+                        <option value="Mah">Maharastra</option>
+                        <option value="Del">Delhi</option>
+                        <option value="Goa">Goa</option>
+                    </select>
+                </div>
+            </div>
+            <!-- done -->
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="inputEmail4">MObile</label>
+                    <input type="text" class="form-control" [(ngModel)]="userObj.userMobile" name="userMobile"
+                        placeholder="Enter Mobile">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputEmail4">Salary</label>
+                    <input type="text" class="form-control" [(ngModel)]="userObj.userSalary" name="userSalary"
+                        placeholder="Enter Salary">
+                </div>
+            </div>
+            <button type="button" (click)="saveUser()" class="btn btn-primary">Save User Details</button>
+        </form>
+    </div>
+</div>
