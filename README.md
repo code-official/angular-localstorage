@@ -6,6 +6,18 @@
 https://angularlocalstoragecrud.netlify.app/
 
 
+This is the Testing Project only but it works as fine 
+
+.> In here after user add click on add and just go to UserList link where you can see user is added
+
+.>Here you can delete the user by click delete button at right of user 
+
+.> And you can update the user too as you want
+
+.>There is one more functionality user here can resister itself and then login also usibg same credentials as during registration
+
+Note:  There are no popups or toast message has inserted when user is added ,  deleted or updated so kindley just vist the user list again and refresh it you can see changes has been made
+
 
 
 
